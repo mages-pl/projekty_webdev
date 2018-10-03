@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&subset=latin-ext');
+@import 'variables.scss';
+
+
+
+body {
+    background:$bg-main;
+    color: $font-color-main; 
+    font-family: $font-family-main;
+    font-size: 14px;
+}
+* {
+    transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+
+}
+h1,h2,h3,h4,h5,h6 { 
+    margin-bottom: 0;
+    h2 {
+        font-size:2.3rem !important;
+    }
+}
+input[type=text], textarea, input[type=date], input[type=email], input[type=tel] { 
+    background: none;
+    outline: none;
+    border: 0px;
+    padding: 10px 0;
+    color: $font-color-main;
+    border-bottom: 2px solid $bg-third;
+    }
+    input[type=submit]  {
+            background: #f1c531;
+    border: 0px;
+    padding: 7px 36px;
+    }
+img { 
+
+    max-width: 100%;
+}
+a, a:hover {
+    color:inherit;
+}
+
+#frontend_app {
+    overflow: hidden;
+    .navbar-nav {
+        font-size:1.2em;
+    }
+    #rezerwacja { 
+        a { 
+            color:$bg-main;
+            &:hover { 
+            text-decoration: none;
+            }
+        }
+        h2 { 
+            font-size:1.2em;
+            transition: 0.5s all ease-in-out;
+        }
+        @media(max-width:991px) {
+                position: fixed;
+    bottom: 0px;
+   
+    text-align: center;
+    left: 25%;
+    right: 25%;
+    opacity:0;
+        }
+        display:inline-block; 
+        color:$bg-main;
+        background:$bg-third;
+        padding: 8px 15px;
+    }
+    #menu_top {
+        z-index: 123;
+        top: 0px;
+        width: 100%;
+    }
+    .hidden { 
+        top:-185px !important;
+
+    }
+    .fixed {
+        top:-20px !important;
+        .piromanacja_logo--h1, .kontakt_top {
+            opacity: 0;
+            transition:0s ease-in-out;
+        }
+        .navbar-brand {
+            img {
+
+                max-width: 64px !important;
+                @media(max-width:991px) {
+                    margin-top: -36px !important;
+                }
+                @media(min-width:992px) {
+                    margin-top: -32px !important;
+                }
+            }
+        }
+    }
+
+    .yellow--bar {
+        background: $bg-third !important; 
+        color: $font-color-third !important;
+        a {
+            color: $font-color-third !important;
+            &:hover { 
+                text-decoration: none;
+            }
+        }
+    }
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+        .navbar-toggler {
+            position: relative;
+            margin-top: -30px;
+            float: right;
+        }
+
+
+        nav {
+
+            z-index: 2;
+            background: $bg-secondary;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 20px;
+            a {
+                color:$font-color-main;
+                &:hover {
+                    color:$font-color-main;
+                }
+            }
+            padding:15px 0;
+
+            .navbar-brand {
+                position: relative;
+                img {
+                    position: absolute;
+                    margin-top: -55px;
+                    max-width: 150px; 
+                }
+            }
+        }
+
+
+    }
+
+    .slider_video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        pointer-events: none;
+    }
+    @media (min-aspect-ratio: 16/9) {
+        .video-foreground { height: 300%; top: -100%; }
+    }
+    @media (max-aspect-ratio: 16/9) {
+        .video-foreground { width: 300%; left: -100%; }
+    }
+    .slider_video {
+        position: relative;
+
+        overflow: hidden;
+
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -99;
+
+        @media(max-width:767px) {
+            display:none;
+        }
+        @media(min-width:768px) and (max-width:1199px) { 
+            height: 440px;
+        }
+        @media(min-width:1200px) { 
+            height: 600px;
+        }
+        @media(min-width:768px) and (max-width:991px) {
+            /*#video_intro {
+                width: auto;
+                height:700px;
+            }*/
+        }
+        @media(max-width:767px) {
+            video {
+                display: none;
+
+            }
+            @media(max-width:767px) {
+                background-image: url(../img/slider-bg.jpg);
+                height: 400px;
+            }
+        }
+        .gui_arrow_down {
+            position: absolute;
+            bottom: -50px;
+
+        }
+    }
+    #piromancja_nav--bottom {
+        z-index: 2;
+        position: relative;
+    }
+    .navbar-toggler {
+        .fa-bars {
+            color: $font-color-main !important;
+        }
+    }
+    #navbarNav {
+        @media(min-width:992px) { 
+            float: right;
+        }
+        @media(max-width:991px) { 
+
+            //  display: block;
+            text-align: center;
+        }
+    }
+    .piromanacja_logo--h1 {
+        @media(min-width:768px) {
+            text-indent: 85px;
+        }
+        @media(max-width:767px) {
+            text-align: center;
+        }
+        margin-top: 15px;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        font-weight: 300;
+        color: $font-color-secondary;
+    }
+    .kontakt_top {
+        font-size: 1.5em;
+        margin: 0;
+        padding: 8px 0;
+        @media(max-width:991px) { 
+            text-align: center;
+            li {
+                display: inline-block;
+            }
+        }
+    }
+    ul {
+        li {
+            display: inline-block;
+        }
+    }
+    #video_intro {
+        /*        @media(min-width:1200px) {
+                    height:150vh;
+                    width: 100%;
+                    top:100px;
+                }
+                @media(max-width:1199px) {
+                    height:300%;
+                    top:-100%;
+                }*/
+        margin-top: -10%;
+        @media(max-width:767px) { 
+            height:100%;
+        }
+        @media(min-width:768px) and (max-width:991px) {
+            height:600px;
+        }       
+        @media(min-width:992px) and (max-width:1199px) {
+            height:768px;
+        }
+        @media(min-width:1200px) and (max-width:1919px) {
+            height:900px;
+        }
+        @media(min-width:1920px) {
+            height:1080px;
+        }
+        left:0;
+        top: 0;
+        position: absolute;
+
+        z-index: 2;
+
+    }
+    .oferta {
+        position: relative;
+        z-index: 2;
+        clear: both;
+        @media(min-width:768px) {
+            // margin-top: 700px;
+
+        }
+        background: #000;
+        width: 100%;
+
+        .gui_pasek {
+            background:$bg-third;
+            padding: 17px 0;
+            h1, h2{
+                color:$font-color-third;
+            } 
+
+        }
+
+        .oferta_img {
+            margin:15px 0;
+            .col-sm-6 {
+                margin: 0px;
+                padding:7px;
+
+                .oferta_img_box {
+                    position: relative;
+                    overflow: hidden;
+                    transition: 0.5s all ease-in-out;     
+                    .caption { 
+                        position: absolute;
+                        color: $font-color-main;
+                        font-size: 3em;
+                        text-align: center;
+                        width: 100%;
+                        height: 100%;
+
+                        top: 50%;
+                        bottom: 50%;
+                        margin-top: -2.2em;
+                        opacity: 0;
+                        line-height: 1em;
+
+                        /*                        text-transform: uppercase;*/
+                        p {
+                            font-size:0.5em;
+                        }
+                        strong {
+                            display: block;
+                        }
+                        img {
+                            opacity: 1;
+
+                        }
+
+                    }
+                    &:hover { 
+
+                        background:$bg-main !important;
+                        .caption {
+                            transition: 0.5s all ease-in;
+                            opacity: 1;
+
+                        }
+                        img { 
+                            opacity:0.05;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .galeria { 
+        background: $bg-main;
+        position: relative;
+        z-index: 3;
+        .media { 
+
+            background-image: url('../img/piromancja_pasek.jpg');
+            width:100%;
+            margin: 25px 0;
+            background-size: cover;
+            h1 { 
+                float: right;
+                text-transform: uppercase;
+                @media(min-width:992px) {
+                    padding: 150px 5% 0 0;
+                }
+                @media(max-width:991px) {
+                    padding: 0 0 0 0;
+                }
+
+                color: $font-color-third;
+            }
+            img {
+                @media(max-width:767px) { 
+                    display: block;
+                    margin: auto;
+                }
+
+            }
+        }
+    }
+    .text {
+        line-height: 28px;
+        font-size: 1.45em; /* wczesniej 1.25*/
+        h1,h2,h3,h4,h5,h6 {
+            margin: 20px 0;
+
+        }
+
+    }
+    .gui_pasek {
+        background: $bg-secondary;
+        color:$font-color-main;
+        padding: 17px 0;
+        text-transform: uppercase;
+    } 
+    .yellow {
+        color: $font-color-secondary;
+        a {
+            color: $font-color-secondary;
+            &:hover {
+                color: $font-color-secondary;
+                text-decoration: none;
+            }
+        }
+    } 
+
+    .onas {
+        .text {
+            text-align: center;
+        }
+        .pokazy_ico {
+            font-size: 1.5em;
+        }
+    }
+    .social{
+        /*        font-size: 3em;*/
+        a {
+            color: $font-color-main;
+        }
+    }
+
+    .gallery img {
+        border: 2px solid rgba(255,255,255,0.15) !important;
+    }
+    #onas {
+        .container {
+            &:nth-child(2) {
+                padding:50px 0;
+            }
+        }
+        .wp-post-image {
+            margin-bottom:50px;    
+        }
+    }
+    #piro_ajax_content {
+        p {
+            font-size: 1.3em;
+        }   
+    }
+
+    .media_content p { 
+        display: inline-block;
+        width: 49%;
+        /* float: left; */
+        overflow: hidden;
+        margin-bottom: 0px;
+    }
+    #wspolpraca {
+        .container {
+            &:nth-child(2) {
+                padding:25px 0;
+            }
+            > .row {
+                display: table;
+                width:100%;
+                .col-sm-6 {
+                    display: table-cell;
+                    float: none;
+                    width: 50%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    #kontakt {
+        > .container {
+            padding:75px 0;
+            .row { 
+
+                font-size: 1.5em;
+                h3{
+                    margin:0;
+
+                }
+                .social {
+                    margin-top: 25px;
+                }
+                .yellow, .social a {
+                    font-size: 2em;
+                    > i {
+                        margin:0 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pulse {
+    display: block;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+.pulse:hover {
+    animation: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+/* Lightbox */
+#lightbox-container-image-data-box {
+    margin-top: -30px !important;
+    position: relative;
+    z-index: 10;
+}

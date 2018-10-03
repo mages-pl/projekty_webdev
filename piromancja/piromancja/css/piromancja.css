@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&subset=latin-ext");
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  font-size: 14px; }
+
+* {
+  transition: 0.5s all ease-in-out;
+  -moz-transition: 0.5s all ease-in-out;
+  -webkit-transition: 0.5s all ease-in-out;
+  -o-transition: 0.5s all ease-in-out; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0; }
+  h1 h2, h2 h2, h3 h2, h4 h2, h5 h2, h6 h2 {
+    font-size: 2.3rem !important; }
+
+input[type=text], textarea, input[type=date], input[type=email], input[type=tel] {
+  background: none;
+  outline: none;
+  border: 0px;
+  padding: 10px 0;
+  color: #fff;
+  border-bottom: 2px solid #f1c40f; }
+
+input[type=submit] {
+  background: #f1c531;
+  border: 0px;
+  padding: 7px 36px; }
+
+img {
+  max-width: 100%; }
+
+a, a:hover {
+  color: inherit; }
+
+#frontend_app {
+  overflow: hidden; }
+  #frontend_app .navbar-nav {
+    font-size: 1.2em; }
+  #frontend_app #rezerwacja {
+    display: inline-block;
+    color: #000;
+    background: #f1c40f;
+    padding: 8px 15px; }
+    #frontend_app #rezerwacja a {
+      color: #000; }
+      #frontend_app #rezerwacja a:hover {
+        text-decoration: none; }
+    #frontend_app #rezerwacja h2 {
+      font-size: 1.2em;
+      transition: 0.5s all ease-in-out; }
+    @media (max-width: 991px) {
+      #frontend_app #rezerwacja {
+        position: fixed;
+        bottom: 0px;
+        text-align: center;
+        left: 25%;
+        right: 25%;
+        opacity: 0; } }
+  #frontend_app #menu_top {
+    z-index: 123;
+    top: 0px;
+    width: 100%; }
+  #frontend_app .hidden {
+    top: -185px !important; }
+  #frontend_app .fixed {
+    top: -20px !important; }
+    #frontend_app .fixed .piromanacja_logo--h1, #frontend_app .fixed .kontakt_top {
+      opacity: 0;
+      transition: 0s ease-in-out; }
+    #frontend_app .fixed .navbar-brand img {
+      max-width: 64px !important; }
+      @media (max-width: 991px) {
+        #frontend_app .fixed .navbar-brand img {
+          margin-top: -36px !important; } }
+      @media (min-width: 992px) {
+        #frontend_app .fixed .navbar-brand img {
+          margin-top: -32px !important; } }
+  #frontend_app .yellow--bar {
+    background: #f1c40f !important;
+    color: #000 !important; }
+    #frontend_app .yellow--bar a {
+      color: #000 !important; }
+      #frontend_app .yellow--bar a:hover {
+        text-decoration: none; }
+  #frontend_app .row {
+    margin-right: 0px;
+    margin-left: 0px; }
+    #frontend_app .row .navbar-toggler {
+      position: relative;
+      margin-top: -30px;
+      float: right; }
+    #frontend_app .row nav {
+      z-index: 2;
+      background: #3d3d3d;
+      width: 100%;
+      margin-top: 20px;
+      font-size: 20px;
+      padding: 15px 0; }
+      #frontend_app .row nav a {
+        color: #fff; }
+        #frontend_app .row nav a:hover {
+          color: #fff; }
+      #frontend_app .row nav .navbar-brand {
+        position: relative; }
+        #frontend_app .row nav .navbar-brand img {
+          position: absolute;
+          margin-top: -55px;
+          max-width: 150px; }
+  #frontend_app .slider_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; }
+  @media (min-aspect-ratio: 16 / 9) {
+    #frontend_app .video-foreground {
+      height: 300%;
+      top: -100%; } }
+  @media (max-aspect-ratio: 16 / 9) {
+    #frontend_app .video-foreground {
+      width: 300%;
+      left: -100%; } }
+  #frontend_app .slider_video {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99; }
+    @media (max-width: 767px) {
+      #frontend_app .slider_video {
+        display: none; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      #frontend_app .slider_video {
+        height: 440px; } }
+    @media (min-width: 1200px) {
+      #frontend_app .slider_video {
+        height: 600px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #frontend_app .slider_video {
+        /*#video_intro {
+            width: auto;
+            height:700px;
+        }*/ } }
+    @media (max-width: 767px) {
+      #frontend_app .slider_video video {
+        display: none; } }
+@media (max-width: 767px) and (max-width: 767px) {
+  #frontend_app .slider_video {
+    background-image: url(../img/slider-bg.jpg);
+    height: 400px; } }
+
+    #frontend_app .slider_video .gui_arrow_down {
+      position: absolute;
+      bottom: -50px; }
+  #frontend_app #piromancja_nav--bottom {
+    z-index: 2;
+    position: relative; }
+  #frontend_app .navbar-toggler .fa-bars {
+    color: #fff !important; }
+  @media (min-width: 992px) {
+    #frontend_app #navbarNav {
+      float: right; } }
+  @media (max-width: 991px) {
+    #frontend_app #navbarNav {
+      text-align: center; } }
+  #frontend_app .piromanacja_logo--h1 {
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-weight: 300;
+    color: #e9ba39; }
+    @media (min-width: 768px) {
+      #frontend_app .piromanacja_logo--h1 {
+        text-indent: 85px; } }
+    @media (max-width: 767px) {
+      #frontend_app .piromanacja_logo--h1 {
+        text-align: center; } }
+  #frontend_app .kontakt_top {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 8px 0; }
+    @media (max-width: 991px) {
+      #frontend_app .kontakt_top {
+        text-align: center; }
+        #frontend_app .kontakt_top li {
+          display: inline-block; } }
+  #frontend_app ul li {
+    display: inline-block; }
+  #frontend_app #video_intro {
+    /*        @media(min-width:1200px) {
+                height:150vh;
+                width: 100%;
+                top:100px;
+            }
+            @media(max-width:1199px) {
+                height:300%;
+                top:-100%;
+            }*/
+    margin-top: -10%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2; }
+    @media (max-width: 767px) {
+      #frontend_app #video_intro {
+        height: 100%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #frontend_app #video_intro {
+        height: 600px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #frontend_app #video_intro {
+        height: 768px; } }
+    @media (min-width: 1200px) and (max-width: 1919px) {
+      #frontend_app #video_intro {
+        height: 900px; } }
+    @media (min-width: 1920px) {
+      #frontend_app #video_intro {
+        height: 1080px; } }
+  #frontend_app .oferta {
+    position: relative;
+    z-index: 2;
+    clear: both;
+    background: #000;
+    width: 100%; }
+    #frontend_app .oferta .gui_pasek {
+      background: #f1c40f;
+      padding: 17px 0; }
+      #frontend_app .oferta .gui_pasek h1, #frontend_app .oferta .gui_pasek h2 {
+        color: #000; }
+    #frontend_app .oferta .oferta_img {
+      margin: 15px 0; }
+      #frontend_app .oferta .oferta_img .col-sm-6 {
+        margin: 0px;
+        padding: 7px; }
+        #frontend_app .oferta .oferta_img .col-sm-6 .oferta_img_box {
+          position: relative;
+          overflow: hidden;
+          transition: 0.5s all ease-in-out; }
+          #frontend_app .oferta .oferta_img .col-sm-6 .oferta_img_box .caption {
+            position: absolute;
+            color: #fff;
+            font-size: 3em;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            bottom: 50%;
+            margin-top: -2.2em;
+            opacity: 0;
+            line-height: 1em;
+            /*                        text-transform: uppercase;*/ }
+            #frontend_app .oferta .oferta_img .col-sm-6 .oferta_img_box .caption p {
+              font-size: 0.5em; }
+            #frontend_app .oferta .oferta_img .col-sm-6 .oferta_img_box .caption strong {
+              display: block; }
+            #frontend_app .oferta .oferta_img .col-sm-6 .oferta_img_box .caption img {
+              opacity: 1; }
+          #frontend_app .oferta .oferta_img .col-sm-6 .oferta_img_box:hover {
+            background: #000 !important; }
+            #frontend_app .oferta .oferta_img .col-sm-6 .oferta_img_box:hover .caption {
+              transition: 0.5s all ease-in;
+              opacity: 1; }
+            #frontend_app .oferta .oferta_img .col-sm-6 .oferta_img_box:hover img {
+              opacity: 0.05; }
+  #frontend_app .galeria {
+    background: #000;
+    position: relative;
+    z-index: 3; }
+    #frontend_app .galeria .media {
+      background-image: url("../img/piromancja_pasek.jpg");
+      width: 100%;
+      margin: 25px 0;
+      background-size: cover; }
+      #frontend_app .galeria .media h1 {
+        float: right;
+        text-transform: uppercase;
+        color: #000; }
+        @media (min-width: 992px) {
+          #frontend_app .galeria .media h1 {
+            padding: 150px 5% 0 0; } }
+        @media (max-width: 991px) {
+          #frontend_app .galeria .media h1 {
+            padding: 0 0 0 0; } }
+      @media (max-width: 767px) {
+        #frontend_app .galeria .media img {
+          display: block;
+          margin: auto; } }
+  #frontend_app .text {
+    line-height: 28px;
+    font-size: 1.45em;
+    /* wczesniej 1.25*/ }
+    #frontend_app .text h1, #frontend_app .text h2, #frontend_app .text h3, #frontend_app .text h4, #frontend_app .text h5, #frontend_app .text h6 {
+      margin: 20px 0; }
+  #frontend_app .gui_pasek {
+    background: #3d3d3d;
+    color: #fff;
+    padding: 17px 0;
+    text-transform: uppercase; }
+  #frontend_app .yellow {
+    color: #e9ba39; }
+    #frontend_app .yellow a {
+      color: #e9ba39; }
+      #frontend_app .yellow a:hover {
+        color: #e9ba39;
+        text-decoration: none; }
+  #frontend_app .onas .text {
+    text-align: center; }
+  #frontend_app .onas .pokazy_ico {
+    font-size: 1.5em; }
+  #frontend_app .social {
+    /*        font-size: 3em;*/ }
+    #frontend_app .social a {
+      color: #fff; }
+  #frontend_app .gallery img {
+    border: 2px solid rgba(255, 255, 255, 0.15) !important; }
+  #frontend_app #onas .container:nth-child(2) {
+    padding: 50px 0; }
+  #frontend_app #onas .wp-post-image {
+    margin-bottom: 50px; }
+  #frontend_app #piro_ajax_content p {
+    font-size: 1.3em; }
+  #frontend_app .media_content p {
+    display: inline-block;
+    width: 49%;
+    /* float: left; */
+    overflow: hidden;
+    margin-bottom: 0px; }
+  #frontend_app #wspolpraca .container:nth-child(2) {
+    padding: 25px 0; }
+  #frontend_app #wspolpraca .container > .row {
+    display: table;
+    width: 100%; }
+    #frontend_app #wspolpraca .container > .row .col-sm-6 {
+      display: table-cell;
+      float: none;
+      width: 50%;
+      vertical-align: middle; }
+  #frontend_app #kontakt > .container {
+    padding: 75px 0; }
+    #frontend_app #kontakt > .container .row {
+      font-size: 1.5em; }
+      #frontend_app #kontakt > .container .row h3 {
+        margin: 0; }
+      #frontend_app #kontakt > .container .row .social {
+        margin-top: 25px; }
+      #frontend_app #kontakt > .container .row .yellow, #frontend_app #kontakt > .container .row .social a {
+        font-size: 2em; }
+        #frontend_app #kontakt > .container .row .yellow > i, #frontend_app #kontakt > .container .row .social a > i {
+          margin: 0 10px; }
+
+.pulse {
+  display: block;
+  cursor: pointer;
+  animation: pulse 2s infinite; }
+
+.pulse:hover {
+  animation: none; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4); }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0); } }
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4); }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0); }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0); } }
+/* Lightbox */
+#lightbox-container-image-data-box {
+  margin-top: -30px !important;
+  position: relative;
+  z-index: 10; }
+
+/*# sourceMappingURL=piromancja.css.map */

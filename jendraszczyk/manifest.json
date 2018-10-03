@@ -1,0 +1,36 @@
+{
+    "short_name":"jendraszczyk",
+    "name":"Michał Jendraszczyk - Portfolio",
+    "display":"standalone",
+    "orientation":"portrait",
+    "background_color":"#2c2c2c",
+    "theme_color":"#2c2c2c",
+    "icons": [
+        {
+        "src":"mj48x48.png",
+        "types":"image/png",
+        "sizes":"48x48"
+        },
+    {
+        "src":"mj96x96.png",
+        "types":"image/png",
+        "sizes":"96x96" 
+        },
+    {
+        "src":"mj128x128.png",
+        "types":"image/png",
+        "sizes":"128x128"
+        },
+     {
+        "src":"mj192x192.png",
+        "types":"image/png",
+        "sizes":"192x192"
+        },
+ {
+        "src":"mj512x512.png",
+        "types":"image/png",
+        "sizes":"512x512"
+        }
+    ],
+    "start_url" : "./?urmsource=homescreen"
+}

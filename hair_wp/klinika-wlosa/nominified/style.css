@@ -1,0 +1,264 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-12-23, 00:34:08
+    Author     : tasilvar
+*/
+
+body {
+    margin:0px;
+    padding:0px;
+
+}
+#main {
+    font-family: 'Fira Sans', sans-serif;
+    color:#6b6b6b;
+}
+
+
+
+#main h1 {
+    text-align: center;
+    color:#000;
+    font-size:36px;
+    font-weight:300;
+    display: block;
+width: 100%;
+clear: both;
+    padding-top: 35px;
+}
+#main h2 {
+    text-align: center;
+    color: #46c18d;
+    font-size:24px;
+    font-weight:300;
+
+}
+.p-col-6, .p-col-3,
+.col-md-6, .col-md-3, .col-md-4, .col-md-2, .col-md-5, .col-md-12, .col-md-9, .col-md-8, .col-md-7, .col-md-10 {
+
+    overflow: hidden;
+}
+.intro {
+    padding:20px 0px;
+    text-align: center;
+}
+.green_block {
+    width:100%;
+    padding:50px 0px;
+    float:left;
+
+    transform: rotate(5deg) skew(5deg);
+    color:#fff;
+    background: url(img/green_block.png) fixed no-repeat center center / cover;
+}
+
+
+
+.row {
+    overflow:hidden;
+    margin-right: 0px !important;
+}
+.green_block h1, .green_block h2, .green_block  h3 {
+    text-align:center;
+    text-transform: uppercase;
+    color:#fff !important;
+}
+.green_block h1   {
+    font-size:40px;
+    text-align: left !important;
+    font-weight:900 !important;
+}
+.green_block h2
+{
+    font-size:40px;
+    font-weight:300 !important;
+}
+.green_block h3{
+    font-size:50px;
+    font-weight:900;
+}
+.green_block .row {
+    transform: rotate(-5deg) skew(-5deg);
+}
+.gray_foot {
+    background:#6b6b6b;
+    color:#fff;
+    clear: both;
+    transform: rotate(5deg) skew(5deg);
+    font-size: 13px;
+}
+.gray_foot .col-md-4 {
+    padding: 30px 60px;
+    border-left: 1px solid #8A8A8A;
+    margin: 40px 0px;
+    height: 150px;
+}
+.bottom {
+    padding:30px 0px;
+    font-size:12px;
+}
+.bottom a:hover {
+      color:#46c18d;
+text-decoration: none;
+}
+.thumbs {
+    padding:30px 0px;
+    float: left;
+    text-align: right;
+}
+
+.menu a {
+
+    color:#161616;
+}
+.menu a:hover {
+    text-decoration: none;
+    color:#46c18d;
+}
+.thumbs img:hover {
+    cursor: pointer;
+}
+.thumbs > .col-md-6 > img a:hover:before {
+    content:"Zobacz";
+    width:100%;
+    height:20px;
+}
+.info_foot {
+    transform: rotate(-5deg) skew(-5deg);
+}
+.bottom a {
+    color:#46c18d;
+}
+@media(min-width:768px) {
+    .header {
+        width:100%;
+        margin:0px;
+        transform: rotate(5deg) skew(5deg);
+        padding:0px;
+        float: left;
+        height: 450px;
+        background: url(img/header.jpg) no-repeat fixed top center / cover;
+    }
+    .logo {
+        background: url(img/logo.png) no-repeat;
+        float: left;
+        transform: rotate(-5deg) skew(-5deg);
+        height: 153px;
+        width: 223px;
+        margin-top: 30px;
+    }
+    .menu li {
+        display:inline-block;
+        padding:5px 15px;
+
+    }
+    .menu li:after {
+        content:"/";
+        padding:0px 0px 0px 20px;    
+    }
+    .menu li:last-child:after {
+        content:"" !important;
+    }
+    #menu {
+        font-size:18px;
+        transform: rotate(-5deg) skew(-5deg);
+    
+    }
+}
+@media(max-width:767px) {
+    #menu {
+        font-size:18px;
+ 
+    }  #menu ul {
+        padding-left:0px !important;
+    }
+    .header {
+        width:100%;
+        margin:0 auto;
+        display: block;
+        text-align: center;
+
+        padding:0px;
+        float: left;
+
+    }
+    .logo {
+        background: url(img/logo.png) no-repeat;
+
+        margin:0 auto;
+        display: block;
+        height: 153px;
+        width: 223px;
+    }
+    .menu li {
+        display:block;
+        padding:5px 15px;
+
+    }   
+}
+.btn {
+    background: #808080;
+    padding: 13px 74px;
+    color: rgba(255, 255, 255, 1);
+    clear: both;
+    margin: 20px 0px;
+    float: right;
+}
+.btn:hover {
+    color:#fff !important;
+}
+.menu_f {
+   padding: 0px;
+   margin: 0px;
+}
+.menu_f li {
+ display: block;
+}
+.menu_f li:before {
+    content:"-";
+}
+.menu_f li a {
+ color:#fff;
+}
+.menu_f li a:hover {
+ color:#46c18d;
+ text-decoration: none;
+}
+.menu_f ul {
+    padding:0px;
+}
+#main .container .row {
+    padding-bottom: 60px;
+}
+.tabela_specyfikacja {
+    margin:0 auto;
+   
+    width:80%;
+border:0px solid #000; /* obramowanie */ 
+ 
+}
+ 
+  td {
+padding:10px !important; /* wewnetrzny margines */
+font-weight:normal;
+ 
+border-radius:10px;
+color:#2c3330 ;
+}
+  tr:nth-child(odd)  {
+    background:#eaf9f3;
+ /*kolor tla*/
+ 
+}
+.tab-h {
+background:#46c58f !important;}
+.tab-h td {
+    font-size: 20px;
+    color:#fff !important; font-weight:bold !important;}
+.margin_left_pkt{
+    padding-left: 7% !important;
+}
