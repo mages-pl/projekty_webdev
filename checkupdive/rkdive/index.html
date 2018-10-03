@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>RKDive - Strona oficjalna marki</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        
+        <link rel="stylesheet" href="assets/css/custom.css" />
+
+        <!--        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>-->
+    </head>
+    <body>
+        <header class="top">
+            <div class="nav-top text-center">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="lnr lnr-phone-handset"></span>
+                            +48 000 111 222
+                            <span class="lnr lnr-envelope"></span>
+                            biuro@example.com
+                        </div>
+                        <div class="col-md-6">
+                            <div class="social">                          
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- nav top -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="d-lg-none d-xl-none navbar-brand" href="#">
+                                <img src="assets/img/brand.jpg" />
+                            </a>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">O marce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Oferta</a>
+                        </li>
+                        <li class="d-none d-lg-block d-xl-block">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/img/brand.jpg" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Współpraca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+            <!-- end nav top -->
+            <!-- slider -->
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image:url(assets/img/slider/1.jpg)">
+                    </div>
+                    <div class="carousel-item" style="background-image:url(assets/img/slider/6.jpg)">
+
+                    </div>
+                    <div class="carousel-item" style="background-image:url(assets/img/slider/5.jpg)">
+
+                    </div>
+                </div>
+
+                <div style="
+                     position: absolute;
+                     z-index: 9;
+                     bottom: 100px;
+/*                     box-shadow: 0px 0px 45px 20px rgba(0,0,0,0.1);*/
+                     width: 50%;
+                     left: 50%;
+                     margin-left: -25%;
+                     right: 50%;
+                     " class="input-group">
+                     
+                    <input type="text" id="findInShop" data-url="http://mjendraszczy.nazwa.pl/rkdive/" placeholder="Szukaj w sklepie" class="col-md-10 form-control" style="
+                           display:  inline-block;
+                           ">
+                    <a href="#" id="submitFindShop" class="col-md-2 input-group-btn btn btn-danger" style="
+                       display:  inline-block;
+                           border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+                       margin:  0;
+                       ">Szukaj</a></div>
+
+            </div>
+
+
+            <!-- end slider -->
+        </header>
+        <section class="brand">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 dark">
+
+                        <a href="#coop" class="brand_box_cooperation wow slideInLeft">
+                            <span>
+                                <span class="lnr lnr-briefcase"></span> Wspólpraca
+                                <h4 class="thin">Zostań naszym partnerem</h4>
+                                <span class="btn ripple btn-radius">Więcej</span>
+                            </span>     
+
+                        </a>
+
+                    </div>
+                    <div class="col-md-6 white">
+                        <img src="https://static.wixstatic.com/media/ece0b7_9cc9d7a86f624336bcc6e4a0f188dfa7~mv2.png/v1/fill/w_250,h_250,q_85,usm_0.66_1.00_0.01/ece0b7_9cc9d7a86f624336bcc6e4a0f188dfa7~mv2.png" style="
+                             position: absolute;
+                             right:  0;
+                             z-index:  9999999;
+                             transform:  skew(-15deg);
+                             ">
+                        <a href="#shop" class="brand_box_shop wow fadeIn">
+                            <span>
+                                <span class="lnr lnr-cart"></span> Sklep online
+                                <h4 class="thin">Wyjątkowe produkty w atrakcyjych cenach</h4>
+                                <span class="btn ripple btn-radius dark">Więcej</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="oferta">
+            <div class="container">
+                <div class="row features">
+                    <div class="col-lg-4">
+                    <a href="#" class="item-block oferta" style="
+    background-image: url(assets/img/home/box-shop.jpg);
+    background-size:  cover;
+    background-position: center;
+    color:  #000;
+    font-size:  2rem;
+    padding: 80% 20px 20% 20px;
+    font-weight:  700;
+">
+    <img src="assets/img/feature/cart.png" style="
+    width:  85px;
+    position:  absolute;
+    margin-top:  -100px;
+">
+                            Nasza oferta
+    <button class="btn btn-radius dark" style="
+    /* clear:  both; */
+    display:  block;
+">
+        Sprwadź
+    </button>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a class="item-block" href="#" style="
+                                   text-align:  center;
+                                   background: #e0c79e;
+                                   padding: 30% 0;
+                                   ">
+                                    <h3>Hurtownia Dropshipping</h3>
+                                    <br>
+                                    <span class="btn ripple btn-radius">Zobacz</span>
+                                    <img src="assets/img/feature/cog.png?V=3" style="
+                                         position:  absolute;
+                                         width: 95px;
+                                         top: 48px;
+                                         left:  20px;
+                                         opacity:  0.5;
+                                         /* color: red; */
+                                         transform: rotate(90deg);
+                                         "></a>
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <a class="item-block" href="#" style="
+                                   background: #fafafa;
+                                   ">
+                                    <img src="assets/img/feature/delivery-truck.png" style="
+                                         position:  absolute;
+                                         width: 75px;
+                                         top: 64px;
+                                         "><div style="
+                                         color: #000;
+                                         font-size: 2.5rem;
+                                         margin:  20px 0;
+                                         top: 95px;
+                                         ">
+                                        <span style="
+                                              font-size: 1rem;
+                                              color: red;
+                                              position:  absolute;
+                                              right: 20px;
+                                              margin-top:  -20px;
+                                              ">
+                                            od 13.00 zł
+                                        </span>
+
+                                        Szybka wysyłka
+                                        <button class="btn btn-radius dark">
+                                            Sprawdź
+                                        </button>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a href="#" class="item-block" style="
+    background-position:  center;
+    font-size:  2rem;
+    background-image: url(assets/img/home/box-b2b.jpg);
+    padding: 15% 20px;
+">
+                                    Zostań naszym klientem biznesowym
+    <button class="btn btn-radius" style="
+    clear:  both;
+    display:  block;
+">Więcej</button>
+                                </a>
+                            </div>               
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <section class="wspolpraca">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Współpraca</h1>  
+                        <div class="paragraph"> 
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce congue tortor quis erat aliquam, sit amet hendrerit lacus egestas. Duis porttitor metus vel magna venenatis, et auctor arcu consectetur. Maecenas at condimentum tortor. Fusce vulputate lorem vel mi faucibus finibus. Nam pellentesque sem at blandit sodales. Nunc ut semper est. Phasellus ut leo venenatis mauris eleifend pharetra. Nullam non gravida mauris. Donec eget elit sed ex viverra iaculis non id leo. In pretium commodo lectus, non commodo odio varius ut. Donec viverra mollis est, sit amet vulputate nulla eleifend a. Cras id interdum mauris. Donec posuere odio orci, in malesuada massa sodales vel. Curabitur odio orci, condimentum a fringilla sed, mattis et orci. Ut elementum magna mi, ac congue risus tincidunt in.
+                        </div>
+                        <br/>
+                        <a href="#" class="btn ripple btn-radius">Sprawdź</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="height:250px;margin-top:50px;">
+                            <img class="wow slideInUp" data-wow-delay="1s" src="https://cdn.ada.asia/wp-content/uploads/sites/4/2017/08/scuba-diver-front.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section class="produkty">
+            <div class="container">
+                <div class="row">
+                    <h1>Polecane produkty</h1>
+                    <h2 class="thin">Bestsellery</h2>
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <a href="#">
+                                <img class="wow bounceIn" src="http://mjendraszczy.nazwa.pl/rkdive/26-large_default/the-best-is-yet-to-come-framed-poster.jpg" />
+                                <h4 class="thin">Rękawice szare Model 325B/3 </h4>
+                                <div class="price">25.00 zł</div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <a href="#">
+                                <img class="wow bounceIn" src="http://mjendraszczy.nazwa.pl/rkdive/27-large_default/the-adventure-begins-framed-poster.jpg" />
+                                <h4 class="thin">Rękawice szare Model 325B/3 </h4>
+                                <div class="price">25.00 zł</div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <a href="#">
+                                <img class="wow bounceIn" src="http://mjendraszczy.nazwa.pl/rkdive/30-large_default/mug-the-adventure-begins.jpg" />
+                                <h4 class="thin">Rękawice szare Model 325B/3 </h4>
+                                <div class="price">25.00 zł</div>
+                            </a>
+                        </div>
+
+                        <a href="#" class="btn btn-radius dark" style="color: #fff;margin:30px auto;">
+                            Odwiedź nasz sklep
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="kontakt">
+            <div class="container">
+                <div class="row kontakt-stopka">
+                    <div class="row col-md-12">
+                        <div class="col-lg-3 col-md-4">
+                            <h3>Informacje</h3>
+                            <ul>
+                                <li><a href="#">O marce</a></li>
+                                <li><a href="#">Współpraca</a></li>
+                                <li><a href="#">Oferta</a></li>
+                                <li><a href="#">Wysyłka</a></li>
+                                <li><a href="#">Partnerzy</a></li>
+                                <li><a href="#">Sklep</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <h3>Magazyn</h3>
+                            <span class="lnr lnr-map-marker"></span> ul. Przykładowa 6, 70-000 Szczecin
+                            <br/>
+                            <span class="lnr lnr-clock"></span> Odbiór przesyłek w godzinach 8.00-16.00
+                            <br/>
+                            <span class="lnr lnr-envelope"></span> magazyn@example.com
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <h3>Biuro</h3>
+                            <span class="lnr lnr-map-marker"></span> ul. Przykładowa 6, 70-000 Szczecin
+                            <br/>
+                            <span class="lnr lnr-clock"></span> Biuro czynne 8.00-16.00
+                            <br/>
+                            <span class="lnr lnr-envelope"></span> biuro@example.com
+                            <br/>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <h3>RKDive sp. z o.o.</h3>
+  
+                             NIP: 1122233301
+                            <br/>
+                            REGON: 111000222
+ <br/>
+                            <strong class="large-font">+48 000 111 222</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="clearfix"></div>
+                    <div class="copy">
+                        copyright &copy; 2018 RKDive / Wszelkie Prawa Zastrzeżone
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </section> 
+        <footer>
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+
+    </body>
+</html>
