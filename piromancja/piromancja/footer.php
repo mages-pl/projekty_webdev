@@ -19,4 +19,4 @@
 </div>
 <script src="<?php bloginfo('url'); ?>/wp-content/themes/piromancja/js/piromancja.js?v=<?php echo rand(1, 999); ?>"></script>
 </body>
-</html>
+</html> 

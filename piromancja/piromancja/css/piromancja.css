@@ -67,7 +67,7 @@ a, a:hover {
     top: -185px !important; }
   #frontend_app .fixed {
     top: -20px !important; }
-    #frontend_app .fixed .piromanacja_logo--h1, #frontend_app .fixed .kontakt_top {
+    #frontend_app .fixed .piromanacja_logo--h1, #frontend_app .fixed .kontakt_top, #frontend_app .fixed #sound {
       opacity: 0;
       transition: 0s ease-in-out; }
     #frontend_app .fixed .navbar-brand img {
@@ -173,6 +173,7 @@ a, a:hover {
     margin-top: 15px;
     text-transform: uppercase;
     letter-spacing: 0px;
+    display: inline-block;
     font-weight: 300;
     color: #e9ba39; }
     @media (min-width: 768px) {
@@ -350,9 +351,19 @@ a, a:hover {
       #frontend_app #kontakt > .container .row .social {
         margin-top: 25px; }
       #frontend_app #kontakt > .container .row .yellow, #frontend_app #kontakt > .container .row .social a {
-        font-size: 2em; }
+        font-size: 1.5em; }
         #frontend_app #kontakt > .container .row .yellow > i, #frontend_app #kontakt > .container .row .social a > i {
           margin: 0 10px; }
+
+#sound {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  cursor: pointer; }
+  #sound .fa {
+    font-size: 2em; }
+    #sound .fa:hover {
+      color: #f1c40f; }
 
 .pulse {
   display: block;

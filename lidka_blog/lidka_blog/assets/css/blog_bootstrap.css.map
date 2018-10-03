@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,0FAA0F;AAClF,6FAAqF",
+"sources": ["../scss/blog_bootstrap.scss"],
+"names": [],
+"file": "blog_bootstrap.css"
+}

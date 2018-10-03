@@ -1,0 +1,43 @@
+/*@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,400,700|Playball');*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin-ext");
+/* c2778f */
+/*
+c9a873
+*/
+/* menu */
+@media (max-width: 989px) { .menu_box { display: none; left: 0px; width: 100%; height: 100%; top: 0px; z-index: 2999; position: fixed; background: rgba(255, 255, 255, 0.95); }
+  .menu_box .menu_box_item { display: table; width: 100%; height: 100%; }
+  .menu_box .menu_box_item .menu-menutop-container { display: table-cell; vertical-align: middle; }
+  .menu_box .menu_box_item .menu-menutop-container li { padding: 25px 20px; display: block; text-align: center; text-transform: uppercase; /*          &:after  { font-family:$font-icon; content:"\f078";   color:$secondary-color; }*/ }
+  .menu_box .menu_box_item .menu-menutop-container li a { color: #000000; padding: 10px 5px; }
+  .menu_box .menu_box_item .menu-menutop-container li a:hover { text-decoration: none; }
+  .menu_box .menu_box_item .menu-menutop-container li .sub-menu { display: none; } }
+.menu_box .menu-top { margin: 0; padding: 0; }
+@media (min-width: 990px) { .menu_box .menu-top { margin: 0; padding: 0; }
+  .menu_box .menu-top li { padding: 25px 20px; display: inline-block; text-transform: uppercase; /*          &:after  { font-family:$font-icon; content:"\f078";   color:$secondary-color; }*/ }
+  .menu_box .menu-top li a { color: #000000; padding: 10px 5px; }
+  .menu_box .menu-top li a:hover { text-decoration: none; border-bottom: 1px solid #d45353; }
+  .menu_box .menu-top li .sub-menu { display: none; } }
+
+.widget { list-style: none; display: block; text-align: center; }
+
+.widget_media_image { margin: auto; }
+
+/* newsletter */
+#newsletter_sidebar { background: #efefef; text-align: center; }
+#newsletter_sidebar input { display: block; margin: 10px auto; }
+
+@media (max-width: 989px) { /* HAMBURGER MENU */
+  .hamburger { display: block; position: fixed; width: 48px; height: 45px; right: 10px; cursor: pointer; z-index: 99998; top: 10px; }
+  .hamburger.open div:before, .hamburger.open div:before { top: 0px; }
+  .hamburger div, .hamburger div:before, .hamburger div:after { width: 100%; height: 7px; content: " "; background: #000000; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
+  .hamburger div { position: relative; margin: 20px auto 0; }
+  .hamburger div:before, div:after { content: ""; position: absolute; }
+  .hamburger.open div:before { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+  .hamburger.open div:after { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+  .hamburger.open:hover div:before { -webkit-transform: rotate(-35deg); transform: rotate(-35deg); }
+  .hamburger.open:hover div:after { -webkit-transform: rotate(35deg); transform: rotate(35deg); }
+  .hamburger:hover:not(.open) div:before, .hamburger:not(.open) div:before { top: -15px; }
+  .hamburger:hover:not(.open) div:after, .hamburger:not(.open) div:after { top: 15px; }
+  .hamburger.open div { background: none; } }
+/*# sourceMappingURL=menu.css.map */

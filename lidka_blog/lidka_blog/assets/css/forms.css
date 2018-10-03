@@ -1,0 +1,29 @@
+/*@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,400,700|Playball');*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin-ext");
+/* c2778f */
+/*
+c9a873
+*/
+form { overflow: hidden; }
+
+/* formularz kontaktowy */
+.wpcf7-form label { width: 100% !important; }
+.wpcf7-form input { border-bottom: 1px solid #eee !important; color: #000000 !important; width: 100%; }
+.wpcf7-form textarea { width: 100%; resize: none; outline: none; border: 0px !important; padding: 0px 20px; border-bottom: 1px solid #eee !important; }
+.wpcf7-form input[type=submit], .wpcf7-form button { padding: 10px 25px; color: #fff !important; }
+
+.searchform { overflow: visible !important; }
+
+input[type=submit], button { cursor: pointer; }
+
+input[type=text], input[type=password], input[type=email] { color: #eee; border: 0px; padding: 10px 25px; outline: none; }
+
+input[type=button], input[type=submit], button { color: #fff; background: #d45353; border: 0px; padding: 5px; }
+
+#searchform { position: fixed; top: 0; margin: 10px 0; }
+#searchform label, #searchform input[type=submit] { display: none; }
+#searchform input[type=text] { width: 100%; color: #222222; border-bottom: 2px solid #eee; background-image: url(../img/search-icon.png); border-bottom: 2px solid #eee; background-size: 16px; background-repeat: no-repeat; text-indent: 25px; background-position: 10%; }
+@media (min-width: 768px) { #searchform input[type=text] { float: right; transition: 0.5s width; } }
+@media (max-width: 767px) { #searchform input[type=text] { width: 100%; } }
+
+/*# sourceMappingURL=forms.css.map */

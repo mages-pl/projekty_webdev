@@ -23,19 +23,79 @@
 //lightbox-gallery.js
 if(void 0===lightbox_path)var lightbox_path="http://"+location.hostname+"/wp-content/plugins/lightbox-gallery/";if("undefined"!=typeof hs&&("undefined"!=typeof graphicsDir?hs.graphicsDir=graphicsDir:hs.graphicsDir="http://"+location.hostname+"/wp-content/plugins/lightbox-gallery/graphics/"),"undefined"==typeof hs){function showImg(o){o!=jQuery("img").length&&jQuery(jQuery("img")[o]).animate({opacity:"show"},"normal",function(){showImg(++o)})}jQuery(document).ready(function(){jQuery.fn.lightBox?(jQuery("a[rel*=lightbox]").lightBox(),jQuery(".gallery1 a").lightBox({captionPosition:"gallery"})):jQuery.fn.colorbox&&jQuery("a[rel*=lightbox]").colorbox(),jQuery(".gallery a").tooltip({track:!0,delay:0,showURL:!1})})}
 
+ 
 //custom script
+
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('video_intro', {
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerReady() {
+ // console.log("hey Im ready");
+ 
+
+}
+
+function onPlayerStateChange() {
+  //console.log("my state changed");
+}
+
+document.getElementById("sound").addEventListener('click', function(event) {
+  console.log(player);
+
+  if (player.isMuted()) {
+    player.unMute();
+  } else {
+    player.mute();
+  }
+});
+
 
 $(document).ready(function () {
 
+//$('#toggleState').on('click',function() {
+//
+//    console.log('gf');
+//   
+//  // var getUrlYT = $('#video_intro').attr('src');
+//   
+//    //var chageUrlYT = getUrlYT.find
+//   
+// //  $('#video_intro').attr('src',)
+//}); 
+
+
+/// ------------------------------------------------------------
+ 
+ 
+
+
+/// ------------------------------------------------------------
+
+var base_url = window.location.hostname;
+//console.log(base_url);
+
     $('#zdjecia_piro').on('click', function () {
         // console.log("vggdf");
-        $.get("http://mjendraszczy.nazwa.pl/piromancja/zdjecia/", function (data) {
+        $.get(base_url+"/zdjecia/", function (data) {
             // console.log("ok");
             $(data).find('#piro_ajax_content').each(function (i) {
                 // console.log("data: "+$(this).html());
                 $(".media_content").html($(this).html());
             });
-        });
+        }); 
     });
     
     $(window).scroll(function() {
@@ -50,7 +110,8 @@ $(document).ready(function () {
 
     $('#filmy_piro').on('click', function () {
         // console.log("vggdf");
-        $.get("http://mjendraszczy.nazwa.pl/piromancja/filmy/", function (data) {
+        
+        $.get(base_url+"/filmy/", function (data) {
             //  console.log("ok");
             $(data).find('#piro_ajax_content').each(function (i) {
                 ///  console.log("data: "+$(this).html());

@@ -9,8 +9,12 @@ include('nav.php');
     <source src="<?php bloginfo('url'); ?>/wp-content/themes/piromancja/media/piromancja_intro.mp4" type="video/mp4">
     </video>-->
     <!--<div style="display: none;">-->
-    <iframe id="video_intro" src="https://www.youtube.com/embed/w1qnlHx0yZM?mute=1&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=w1qnlHx0yZM" frameborder="0" allowfullscreen></iframe>
+<!--    <iframe id="video_intro" src="https://www.youtube.com/embed/w1qnlHx0yZM?mute=1&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=w1qnlHx0yZM" frameborder="0" allowfullscreen></iframe>
+    -->
+    <iframe id="video_intro" src="https://www.youtube.com/embed/w1qnlHx0yZM?enablejsapi=1&mute=1&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=w1qnlHx0yZM" enablejsapi="1" frameborder="0" allowfullscreen></iframe>
     <!--</div>-->
+ 
+    
  
 </div>
 
@@ -22,7 +26,7 @@ include('nav.php');
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h1><a href="#pdf"><i class="fa fa-download" aria-hidden="true"></i>
+                    <h1><a id="toggleState" href="#pdf"><i class="fa fa-download" aria-hidden="true"></i>
                             Pobierz PDF</a></h1> 
                 </div>
                 <div class="col-sm-6">

@@ -67,11 +67,8 @@
                                     ?>
                                 </ul>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
             </nav>
@@ -79,6 +76,7 @@
                 <div class="row" id="piromancja_nav--bottom">
                     <div class="col-lg-8 col-md-12 col-sm-12">
                         <h1 class="piromanacja_logo--h1">Teatr Ognia Piromancja</h1>
+                        <div id="sound"><i class="fa fa-volume-up" style="font-size:2em;"></i></div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
 

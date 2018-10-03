@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>mj_sitemap</name>
+    <displayName><![CDATA[MJ Sitemap Generator]]></displayName>
+    <version><![CDATA[1.0]]></version>
+    <description><![CDATA[Dynamicznie tworzy XML mapy strony]]></description>
+    <author><![CDATA[Michał Jendraszczyk]]></author>
+    <tab><![CDATA[other]]></tab>
+	<confirmUninstall><![CDATA[Usunąć moduł?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>
